@@ -1,5 +1,6 @@
 Step 1 -- This will build the file with name Dockerfile
-docker build .
+docker build -t myimage:2.0 .
+Here myimage2.0 is name
 
 Step 2 -- Check docker images
 docker images
