@@ -8,14 +8,11 @@ docker images
 Step 3 -- Run Current image got from step 2
 docker run cfe57e1c332e
 
-Step 4 -- Run the Docker image
-docker run 3cb475728ba6
-
-Step 5 -- Check if image is running
+Step 4 -- Check if image is running
 docker ps
 
-Step 6 -- Execute the RUNNING specified image in interactive mode
+Step 5 -- Execute the RUNNING specified conatiner in interactive mode found from step 4
 docker exec -it 48f53202bd86 ./bin/bash
  
-Step7 -- Check if file present
+Step 6 -- Check if file present
 do a ls
