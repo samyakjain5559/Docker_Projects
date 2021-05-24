@@ -5,8 +5,8 @@ Here myimage2.0 is name
 Step 2 -- Check docker images
 docker images
 
-Step 3 -- Run Current image got from step 2
-docker run cfe57e1c332e
+Step 3 -- Run Current image got from step 2 in detached mode so that we can use terminal for other command 
+docker run -d myimage:2.0
 
 Step 4 -- Check if image is running
 docker ps
