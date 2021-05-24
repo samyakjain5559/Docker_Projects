@@ -1,7 +1,10 @@
 FROM ubuntu:latest
+
 #Copy from host to container root
 COPY hi.txt /
+
 RUN  apt-get update && apt-get install -y curl
+
 #These 2 line below used for running container in background by giving infinite task in dev null
 ENTRYPOINT ["tail"]
 CMD ["-f","/dev/null"]
